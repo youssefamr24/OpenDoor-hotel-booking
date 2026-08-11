@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenDoor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+     <section class="hero-section">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- 1. Left Column: Logo -->
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img src="assets/imgs/Logo Nav.png" alt="OpenDoor Logo"></a>
+            </div>
+
+            <!-- 2. Middle Column: Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="hotels.html" class="active">Hotels</a></li>
+                <li><a href="index.html#packages">Packages</a></li>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="index.html">Contact us</a></li>
+            </ul>
+
+            <!-- 3. Right Column: Auth Buttons -->
+            <div class="nav-right">
+                <a href="login.html" class="login-btn">Log in</a>
+                <a href="signup.html" class="signup-btn">Sign up</a>
+            </div>
+        </nav>
+
+         <!-- Hero Content -->
+         <div class="hero-content">
+            <h1 class="hero-title">Your Journey, With <span>No Hidden Doors</span></h1>
+            <p class="hero-subtitle">Explore handpicked hotel packages with 100% transparent pricing, verified remote-work filters, and zero booking surprises.</p>   
+         </div>
+
+         <!-- Search Bar -->
+          <div class="search-bar-container">
+            <!-- Search details (Where to, Check in, Check out, Who) -->
+            <div class="search-field">
+                <span class="search-label">Where to?</span>
+                <input type="text" class="search-input" placeholder="Search destinations"> 
+            </div>
+            <div class="search-field">
+                <span class="search-label">Check in</span>
+                <input type="text" class="search-input" placeholder="Add date"> 
+            </div>
+            <div class="search-field">
+                <span class="search-label">Check out</span>
+                <input type="text" class="search-input" placeholder="Add date"> 
+            </div>
+            <div class="search-field">
+                <span class="search-label">Who?</span>
+                <input type="text" class="search-input" placeholder="Add guests"> 
+            </div>
+            <!-- Search button -->
+            <button class="search-submit-btn">Search</button>
+          </div>
+     </section>
+
+    <!-- Most Popular destinations -->
+      <section class="destinations-section">
+        <!-- section header -->
+         <div class="section-header">
+            <h2>Most popular travel destinations</h2>
+            <p>Discover the best tourist destinations around the world</p>
+         </div>
+
+         <!-- destinations container -->
+          <div class="destinations-grid">
+            <!-- card 1 -->
+             <article class="destination-card">
+                <div class="destination-img-wrap">
+                    <img src="assets/imgs/Cairo.jpg" alt="Cairo & Giza area">
+                    <div class="destination-overlay">
+                        <h3>Cairo</h3>
+                        <p>Egypt</p>
+                    </div>
+                </div>
+             </article>
+
+             <!-- card 2 -->
+             <article class="destination-card">
+                <div class="destination-img-wrap">
+                    <img src="assets/imgs/Reyad.jpg" alt="Reyad">
+                    <div class="destination-overlay">
+                        <h3>Reyad</h3>
+                        <p>Saudi Arabia</p>
+                    </div>
+                </div>
+             </article>
+             
+             <!-- card 3 -->
+             <article class="destination-card">
+                <div class="destination-img-wrap">
+                    <img src="assets/imgs/Madrid.jpg" alt="Madrid">
+                    <div class="destination-overlay">
+                        <h3>Madrid</h3>
+                        <p>Spain</p>
+                    </div>
+                </div>
+             </article>
+          </div>
+
+          <!-- Section Navigation Arrows -->
+          <div class="section-arrows">
+              <button class="arrow-btn prev-btn" aria-label="Previous">
+                  <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="arrow-btn next-btn" aria-label="Next">
+                  <i class="fa-solid fa-chevron-right"></i>
+              </button>
+          </div>
+      </section>
+      
+      
+      <!-- Top Hotels Neatby -->
+
+      <section class="hotels-section">
+        <!-- Section header  -->
+         <div class="hotels-header-row">
+            <div class="section-header">
+                <h2>Top Hotels Nearby</h2>
+                <p>Discover best hotels around your area</p>
+            </div>
+            <a href="hotels.html" class="see-all-link">See All</a>
+         </div>
+
+         <!-- Hotels Container -->
+          <div class="hotels-grid">
+            <!-- Card 1 -->
+             <article class="hotel-card">
+                <!-- Image of the card -->
+                <div class="hotel-img-wrap">
+                    <img src="assets/imgs/Triple hotel/1.jpg" alt="Trip garden view hotel">
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Content of the card -->
+                <div class="hotel-card-content">
+                    <!-- Title & Location -->
+                    <h3>Triple garden view hotel</h3>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Qasr El Nil</p>
+
+                    <!-- Rating -->
+                    <div class="hotel-rating-row">
+                        <span class="rating-badge">9.1</span>
+                        <span class="review-count">1,133 reviews</span>
+                    </div>
+
+                    <p class="hotel-snippet">Located in Cairo, a 12-minute walk from Tahrir Square, Triple garden view hotel features views of the city. This 3-star hotel offers room service ....</p>
+                    <a href="property-details.html" class="show-more-link">Show more</a>
+                    
+                    <div class="hotel-price-row">
+                        <span class="price-from">From</span>
+                        <span class="price-value">EGP 2,056.83</span>
+                        <span class="price-per">per night</span> 
+                    </div>
+
+                    <p class="tax-status">No taxes included</p>
+                    <a href="property-details.html" class="view-deals-btn">View Deals</a>
+                </div>
+             </article>
+
+             <!-- Card 2 -->
+            <article class="hotel-card">
+                <div class="hotel-img-wrap">
+                    <img src="assets/imgs/Spire Hotel/fatih-beki-cIXV31-nw6w-unsplash.jpg" alt="Spire West Hotel">
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="hotel-card-content">
+                    <h3>Spire West Hotel</h3>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Al Haram</p>
+                    <div class="hotel-rating-row">
+                        <span class="rating-badge">9.0</span>
+                        <span class="review-count">1,212 reviews</span>
+                    </div>
+                    <p class="hotel-snippet">Conveniently located in the Giza district of Cairo, Spire West Hotel is located 2.2 miles from Giza Pyramids, 2.6 miles from Great Sphinx and 7.4 miles from Cairo ....</p>
+                    <a href="property-details.html" class="show-more-link">Show more</a>
+                    
+                    <div class="hotel-price-row">
+                        <span class="price-from">From</span>
+                        <span class="price-value">EGP 2,554.23</span>
+                        <span class="price-per">per night</span>
+                    </div>
+                    <p class="tax-status">No taxes included</p>
+                    
+                    <a href="property-details.html" class="view-deals-btn">View Deals</a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="hotel-card">
+                <div class="hotel-img-wrap">
+                    <img src="assets/imgs/Brothers view hotel/337170603.jpg" alt="Brothers Pyramids View">
+                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="hotel-card-content">
+                    <h3>Brothers Pyramids View</h3>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Giza</p>
+                    <div class="hotel-rating-row">
+                        <span class="rating-badge">9.1</span>
+                        <span class="review-count">1,042 reviews</span>
+                    </div>
+                    <p class="hotel-snippet">Boasting one of the best views of the Great Pyramids, the Brothers Pyramids View is in Cairo (Giza) across from the Great Pyramids and the Sphinx.</p>
+                    <a href="property-details.html" class="show-more-link">Show more</a>
+                    
+                    <div class="hotel-price-row">
+                        <span class="price-from">From</span>
+                        <span class="price-value">EGP 985.84</span>
+                        <span class="price-per">per night</span>
+                    </div>
+                    <p class="tax-status">No taxes included</p>
+                    
+                    <a href="property-details.html" class="view-deals-btn">View Deals</a>
+                </div>
+            </article>
+          </div>
+
+          <!-- Section Navigation Arrows -->
+          <div class="section-arrows">
+                <button class="arrow-btn prev-btn" aria-label="Previous">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="arrow-btn next-btn" aria-label="Next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+          </div>
+      </section>
+
+      <!-- Why choose opendoor -->
+       <section class="value-prop-section">
+            <!-- section header -->
+            <h2 class="section-title-center">Why choose OpenDoor</h2>
+
+            <!-- Feature grid container -->
+             <div class="features-grid">
+                <!-- Card 1 -->
+                 <article class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-money-bill"></i>
+                    </div>
+
+                    <h3>100% Upfront Pricing</h3>
+                    <p>What you see on the screen is the final price you pay. Taxes, service fees, and resort costs are fully transparent from the very first click.</p>
+                 </article>
+                <!-- Card 2 -->
+                 <article class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-check-double"></i>
+                    </div>
+
+                    <h3>Handpicked Stays & Packages</h3>
+                    <p>Carefully curated hotels, resorts, and travel packages tailored for total relaxation, family trips, or seamless getaways.</p>
+                 </article>
+                <!-- Card 3 -->
+                 <article class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+
+                    <h3>Zero Friction Booking</h3>
+                    <p>Skip the mandatory account creation and clunky checkouts. Secure your trip in minutes with complete peace of mind and clear cancellation terms.</p>
+                 </article>
+        </section>
+
+
+        <!-- About us section  -->
+        <section id="about" class="about-section">
+            <!-- Section Title Centered at Top -->
+            <h2 class="about-section-title">About Us</h2>
+
+            <!-- Main Grid Container (Images Left, Content Right) -->
+            <div class="about-container">
+                <!-- Left column: Overlapping Images -->
+                <div class="about-images-col">
+                    <div class="about-img-card img-card-large">
+                        <img src="assets/imgs/about us 1.jpg" alt="Resort pool and palm trees">
+                    </div>
+
+                    <div class="about-img-card img-card-small">
+                        <img src="assets/imgs/about us 2.jpg" alt="Modern hotel pool view">
+                    </div>
+                </div>
+
+                <!-- Right column: Content Box -->
+                <div class="about-content-col">
+                    <div class="about-card-box">
+                        <p>
+                            <strong>OpenDoor</strong> is a travel company built on a simple belief: booking a trip should be as exciting as taking it. By combining <strong>100% upfront pricing</strong>, handpicked global stays, and a seamless checkout experience, we give you the freedom to explore without the stress.
+                        </p>
+                        <a href="about.html" class="read-more-btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customers testimonials -->
+         <section class="testimonials-section">
+        <!-- Section Title Centered -->
+        <h2 class="testimonials-section-title">What our customers say</h2>
+
+        <!-- Testimonials Grid Container -->
+        <div class="testimonials-grid">
+            <!-- Testimonial Card 1 -->
+            <article class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="assets/imgs/People/chris-andrawes-8uQMjEZ-LBQ-unsplash.jpg" alt="Essam Mohamed">
+                </div>
+                <h3>Essam Mohamed</h3>
+                <p class="testimonial-location">Cairo, Egypt</p>
+                <div class="testimonial-quote-box">
+                    <span class="quote-icon">“</span>
+                    <p class="testimonial-text">No hidden fees at checkout—what you see is truly what you pay. Open Door is honest and completely stress-free.</p>
+                </div>
+            </article>
+
+            <!-- Testimonial Card 2 (Active/Highlighted Center Card) -->
+            <article class="testimonial-card testimonial-card-active">
+                <div class="testimonial-avatar">
+                    <img src="assets/imgs/People/lisa-marie-theck-ov2d67meq4c-unsplash.jpg" alt="Asmaa Ahmed">
+                </div>
+                <h3>Asmaa Ahmed</h3>
+                <p class="testimonial-location">Cairo, Egypt</p>
+                <div class="testimonial-quote-box">
+                    <span class="quote-icon">“</span>
+                    <p class="testimonial-text">Finding a handpicked resort for our family was effortless. We booked our entire stay in under five minutes with zero surprises.</p>
+                </div>
+            </article>
+
+            <!-- Testimonial Card 3 -->
+            <article class="testimonial-card">
+                <div class="testimonial-avatar">
+                    <img src="assets/imgs/People/juan-boche-UD1GWGl1tk4-unsplash.jpg" alt="Noah David">
+                </div>
+                <h3>Noah David</h3>
+                <p class="testimonial-location">Rome, Italy</p>
+                <div class="testimonial-quote-box">
+                    <span class="quote-icon">“</span>
+                    <p class="testimonial-text">Clean design, verified stays, and absolute price transparency. Open Door is my go-to booking platform now.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Carousel Pagination Dots -->
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Our Partners Section                      -->
+    <section class="partners-section">
+        <!-- Section Title Centered -->
+        <h2 class="partners-section-title">Our Partners</h2>
+
+        <!-- Partners Logos Row Container -->
+        <div class="partners-row">
+            <div class="partner-logo-item">
+                <img src="assets/imgs/Brands/image 27.png" alt="Axon Airlines">
+            </div>
+            <div class="partner-logo-item">
+                <img src="assets/imgs/Brands/image 28.png" alt="Jetstar">
+            </div>
+            <div class="partner-logo-item">
+                <img src="assets/imgs/Brands/Group 64.png" alt="Hilton">
+            </div>
+            <div class="partner-logo-item">
+                <img src="assets/imgs/Brands/image 30.png" alt="Qantas">
+            </div>
+            <div class="partner-logo-item">
+                <img src="assets/imgs/Brands/image 31.png" alt="Alitalia">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile app -->
+    <section class="app-promo-section">
+        <!-- Left Column: Mockup Phones -->
+        <div class="app-phones-col">
+            <img src="assets/imgs/iPhone 16.png" alt="Mockup">
+        </div>
+
+        <!-- Right Column: Content & Download Buttons -->
+        <div class="app-content-col">
+            <h2>OpenDoor Mobile App</h2>
+            <p class="app-subtitle">Available on IOS & Android</p>
+            <p class="app-description">
+                Open Door is a curated hotel booking platform dedicated to 100% upfront pricing and seamless, transparent travel experiences.
+            </p>
+            <div class="app-buttons-row">
+                <a href="#" class="app-store-btn">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>Download For IOS</span>
+                </a>
+                <a href="#" class="app-store-btn">
+                    <i class="fa-brands fa-android"></i>
+                    <span>Download For Andriod</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter & footer  -->
+
+    <footer class="site-footer-wrapper">
+        <!-- Banner -->
+         <div class="newsletter-banner">
+            <div class="newsletter-content">
+                <h2>Subscribe<br>Newsletter</h2>
+                <p class="newsletter-brand">The Travel</p>
+                <p class="newsletter-sub">Get inspired! Receive hotels discounts, tips and behind the scenes stories.</p>
+                
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="newsletter-graphic">
+                <img src="assets/imgs/emojione-v1_open-mailbox-with-lowered-flag.png" alt="Mailbox illustration">
+            </div>
+         </div>
+
+         <!-- Footer navigation -->
+          <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo"><img src="assets/imgs/Logo Footer.png" alt=""></a>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Destinations Column -->
+            <div class="footer-col">
+                <h4>Our Destinations</h4>
+                <ul>
+                    <li><a href="#">Cairo & Giza</a></li>
+                    <li><a href="#">Red Sea Resorts</a></li>
+                    <li><a href="#">Alexandria Coast</a></li>
+                    <li><a href="#">Global Getaways</a></li>
+                </ul>
+            </div>
+
+            <!-- About Us Column -->
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Partner with Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Column -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Help & Support Center</a></li>
+                    <li><a href="mailto:support@opendoor.travel">support@opendoor.travel</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

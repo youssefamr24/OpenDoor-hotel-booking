@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenDoor - Hotels Listing</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- HERO SECTION & NAVIGATION                  -->
+
+    <section class="hero-section listing-hero">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- 1. Left Column: Logo -->
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img src="assets/imgs/Logo Nav.png" alt="OpenDoor Logo"></a>
+            </div>
+
+            <!-- 2. Middle Column: Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="hotels.html" class="active">Hotels</a></li>
+                <li><a href="index.html#packages">Packages</a></li>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="index.html">Contact us</a></li>
+            </ul>
+
+            <!-- 3. Right Column: Auth Buttons -->
+            <div class="nav-right">
+                <a href="login.html" class="login-btn">Log in</a>
+                <a href="signup.html" class="signup-btn">Sign up</a>
+            </div>
+        </nav>
+
+        <!-- Floating Search Bar -->
+        <div class="search-bar-container">
+            <div class="search-field">
+                <span class="search-label">Where to?</span>
+                <input type="text" class="search-input" placeholder="Search destinations">
+            </div>
+            <div class="search-field">
+                <span class="search-label">Check in</span>
+                <input type="text" class="search-input" placeholder="Add date">
+            </div>
+            <div class="search-field">
+                <span class="search-label">Check out</span>
+                <input type="text" class="search-input" placeholder="Add date">
+            </div>
+            <div class="search-field">
+                <span class="search-label">Who?</span>
+                <input type="text" class="search-input" placeholder="Add guests">
+            </div>
+            <button class="search-submit-btn">Search</button>
+        </div>
+    </section>
+
+    <!-- MAIN LISTING LAYOUT SECTION                -->
+
+    <main class="listing-page-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Hotels</span>
+        </div>
+
+        <div class="listing-grid-layout">
+            <!-- LEFT SIDEBAR: FILTERS      -->
+
+            <aside class="filters-sidebar">
+                <h3>Filters</h3>
+
+                <!-- Price Filter Group -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <span>Price</span>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="range-slider-wrap">
+                        <input type="range" min="0" max="10000" value="5000" class="filter-range">
+                        <div class="range-labels">
+                            <span>EGP 400</span>
+                            <span>EGP 10,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Filter Group -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <span>Location</span>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="range-slider-wrap">
+                        <input type="range" min="0" max="50" value="15" class="filter-range">
+                        <div class="range-labels">
+                            <span>1km</span>
+                            <span>200km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rating Filter Group -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <span>Rating</span>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="rating-pills-grid">
+                        <button class="rating-pill">0+</button>
+                        <button class="rating-pill">1+</button>
+                        <button class="rating-pill">2+</button>
+                        <button class="rating-pill">3+</button>
+                        <button class="rating-pill">4+</button>
+                        <button class="rating-pill">5+</button>
+                        <button class="rating-pill">6+</button>
+                        <button class="rating-pill">7+</button>
+                        <button class="rating-pill">8+</button>
+                        <button class="rating-pill">9+</button>
+                    </div>
+                </div>
+
+                <!-- Essentials Filter Group -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <span>Essentials</span>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="checkbox-list">
+                        <label class="checkbox-item"><input type="checkbox"> Free Breakfast Included</label>
+                        <label class="checkbox-item"><input type="checkbox"> Swimming Pool</label>
+                        <label class="checkbox-item"><input type="checkbox"> Spa/Wellness</label>
+                        <label class="checkbox-item"><input type="checkbox"> Free Parking</label>
+                        <label class="checkbox-item"><input type="checkbox"> Air Conditioning</label>
+                        <label class="checkbox-item"><input type="checkbox"> High-speed Wi-Fi</label>
+                        <label class="checkbox-item"><input type="checkbox"> Dedicated Workspace</label>
+                    </div>
+                </div>
+            </aside>
+
+
+            <!-- RIGHT SIDE: HOTEL RESULTS  -->
+
+            <section class="results-content-area">
+                <!-- Results Header Bar -->
+                <div class="results-header-bar">
+                    <h2>20 results found</h2>
+                    <div class="view-toggle-icons">
+                        <i class="fa-solid fa-table-cells active-view"></i>
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+
+                <!-- 2-Column Hotel Cards Grid -->
+                <div class="hotels-listing-grid">
+                    <!-- Hotel Card 1 -->
+                    <article class="hotel-card">
+                        <div class="hotel-img-wrap">
+                            <img src="assets/imgs/Brothers view hotel/337170603.jpg" alt="Triple garden view hotel">
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3>Triple garden view hotel</h3>
+                            <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Qasr El Nil</p>
+                            <div class="hotel-rating-row">
+                                <span class="rating-badge">9.1</span>
+                                <span class="review-count">1,133 reviews</span>
+                            </div>
+                            <p class="hotel-snippet">Located in Cairo, a 12-minute walk from Tahrir Square, Triple garden view hotel features views of the city. This 3-star hotel offers room service ...</p>
+                            <a href="property-details.html" class="show-more-link">Show more</a>
+                            <div class="hotel-price-row">
+                                <span class="price-from">From</span>
+                                <span class="price-value">EGP 2,056.83</span>
+                                <span class="price-per">per night</span>
+                            </div>
+                            <p class="tax-status">No taxes included</p>
+                            <a href="property-details.html" class="view-deals-btn">View Deals</a>
+                        </div>
+                    </article>
+
+                    <!-- Hotel Card 2 -->
+                    <article class="hotel-card">
+                        <div class="hotel-img-wrap">
+                            <img src="assets/imgs/Spire Hotel/fatih-beki-cIXV31-nw6w-unsplash.jpg" alt="Spire West Hotel">
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3>Spire West Hotel</h3>
+                            <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Al Haram</p>
+                            <div class="hotel-rating-row">
+                                <span class="rating-badge">9.0</span>
+                                <span class="review-count">1,212 reviews</span>
+                            </div>
+                            <p class="hotel-snippet">Conveniently located in the Giza district of Cairo, Spire West Hotel is located 2.2 miles from Giza Pyramids, 2.6 miles from Great Sphinx and 7.4 miles from Cairo ...</p>
+                            <a href="property-details.html" class="show-more-link">Show more</a>
+                            <div class="hotel-price-row">
+                                <span class="price-from">From</span>
+                                <span class="price-value">EGP 2,554.23</span>
+                                <span class="price-per">per night</span>
+                            </div>
+                            <p class="tax-status">No taxes included</p>
+                            <a href="property-details.html" class="view-deals-btn">View Deals</a>
+                        </div>
+                    </article>
+
+                    <!-- Hotel Card 3 -->
+                    <article class="hotel-card">
+                        <div class="hotel-img-wrap">
+                            <img src="assets/imgs/Spire west hotel/Rectangle 18.png" alt="El Farida Hotel">
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3>El Farida Hotel</h3>
+                            <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Cairo</p>
+                            <div class="hotel-rating-row">
+                                <span class="rating-badge">9.1</span>
+                                <span class="review-count">1,133 reviews</span>
+                            </div>
+                            <p class="hotel-snippet">Located in Cairo, a 5-minute walk from Tahrir Square, Triple garden view hotel features views of the city. This 3-star hotel offers room service ....</p>
+                            <a href="property-details.html" class="show-more-link">Show more</a>
+                            <div class="hotel-price-row">
+                                <span class="price-from">From</span>
+                                <span class="price-value">EGP 2,300.83</span>
+                                <span class="price-per">per night</span>
+                            </div>
+                            <p class="tax-status">No taxes included</p>
+                            <a href="property-details.html" class="view-deals-btn">View Deals</a>
+                        </div>
+                    </article>
+
+                    <!-- Hotel Card 4 -->
+                    <article class="hotel-card">
+                        <div class="hotel-img-wrap">
+                            <img src="assets/imgs/Triple hotel/3.jpg" alt="Brothers Pyramids View">
+                            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                        <div class="hotel-card-content">
+                            <h3>Brothers Pyramids View</h3>
+                            <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Al Haram</p>
+                            <div class="hotel-rating-row">
+                                <span class="rating-badge">9.0</span>
+                                <span class="review-count">1,212 reviews</span>
+                            </div>
+                            <p class="hotel-snippet">Conveniently located in the Giza district of Cairo, Spire West Hotel is located 2.2 miles from Giza Pyramids, 2.6 miles from Great Sphinx and 7.4 miles from Cairo ....</p>
+                            <a href="property-details.html" class="show-more-link">Show more</a>
+                            <div class="hotel-price-row">
+                                <span class="price-from">From</span>
+                                <span class="price-value">EGP 1,900.93</span>
+                                <span class="price-per">per night</span>
+                            </div>
+                            <p class="tax-status">No taxes included</p>
+                            <a href="property-details.html" class="view-deals-btn">View Deals</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination Section -->
+                <div class="pagination-container">
+                    <button class="page-nav-btn" disabled>&lt; Previous</button>
+                    <div class="page-numbers">
+                        <button class="page-num active">1</button>
+                        <button class="page-num">2</button>
+                        <button class="page-num">3</button>
+                        <button class="page-num">4</button>
+                    </div>
+                    <button class="page-nav-btn pill-next-btn">Next <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <p class="showing-results-text">Showing 1-4 of 20 hotels</p>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- NEWSLETTER & FOOTER                       -->
+
+    <footer class="site-footer-wrapper">
+        <div class="newsletter-banner">
+            <div class="newsletter-content">
+                <h2>Subscribe<br>Newsletter</h2>
+                <p class="newsletter-brand">The Travel</p>
+                <p class="newsletter-sub">Get inspired! Receive hotels discounts, tips and behind the scenes stories.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="newsletter-graphic">
+                <img src="assets/imgs/emojione-v1_open-mailbox-with-lowered-flag.png" alt="Mailbox illustration">
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo"><img src="assets/imgs/Logo Footer.png" alt=""></a>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Our Destinations</h4>
+                <ul>
+                    <li><a href="#">Cairo & Giza</a></li>
+                    <li><a href="#">Red Sea Resorts</a></li>
+                    <li><a href="#">Alexandria Coast</a></li>
+                    <li><a href="#">Global Getaways</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Partner with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Help & Support Center</a></li>
+                    <li><a href="mailto:support@opendoor.travel">support@opendoor.travel</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
