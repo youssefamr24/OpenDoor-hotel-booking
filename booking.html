@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenDoor - Complete Your Booking</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Hero section (Search bar removed) -->
+    <section class="hero-section listing-hero booking-hero-compact">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img src="assets/imgs/Logo Nav.png" alt="OpenDoor Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hotels.html" class="active">Hotels</a></li>
+                <li><a href="index.html#packages">Packages</a></li>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="index.html">Contact us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="login.html" class="login-btn">Log in</a>
+                <a href="signup.html" class="signup-btn">Sign up</a>
+            </div>
+        </nav>
+    </section>
+
+    <main class="booking-page-container">
+        <!-- Step Progress Indicator -->
+        <div class="checkout-steps-bar">
+            <div class="step-item completed">
+                <span class="step-num"><i class="fa-solid fa-check"></i></span>
+                <span class="step-text">Your selection</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item active">
+                <span class="step-num">2</span>
+                <span class="step-text">Your details</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item">
+                <span class="step-num">3</span>
+                <span class="step-text">Booking complete</span>
+            </div>
+        </div>
+
+        <!-- Main Booking Grid Layout -->
+        <div class="booking-grid-layout">
+            
+            <!-- LEFT COLUMN: Forms & Input Fields -->
+            <div class="booking-forms-col">
+                
+                <!-- Contact Information Box -->
+                <div class="form-card-box">
+                    <h3>Contact Information</h3>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>FIRST NAME <span>*</span></label>
+                            <input type="text" placeholder="First name" required>
+                        </div>
+                        <div class="form-field">
+                            <label>LAST NAME <span>*</span></label>
+                            <input type="text" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>PHONE NUMBER <span>*</span></label>
+                            <input type="tel" placeholder="Phone number" required>
+                        </div>
+                        <div class="form-field">
+                            <label>EMAIL ADDRESS <span>*</span></label>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-field full-width">
+                        <label>COUNTRY <span>*</span></label>
+                        <div class="custom-select-wrapper">
+                            <i class="fa-solid fa-chevron-down select-left-icon"></i>
+                            <select class="form-select left-icon-select">
+                                <option value="" disabled selected>Country</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add to your stay Box -->
+                <div class="form-card-box">
+                    <h3>Add to your stay</h3>
+                    <div class="checkbox-options-list">
+                        <label class="checkout-checkbox">
+                            <input type="checkbox"> I'm interested in requesting an airport shuttle
+                        </label>
+                        <label class="checkout-checkbox">
+                            <input type="checkbox"> I'm interested in renting a car with 10% off
+                        </label>
+                        <label class="checkout-checkbox">
+                            <input type="checkbox"> Want to book a taxi or shuttle ride in advance?
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Special Requests Box -->
+                <div class="form-card-box">
+                    <h3>Special Requests</h3>
+                    <span class="form-subtitle-note">PLEASE WRITE YOUR REQUESTS IN ENGLISH (OPTIONAL)</span>
+                    <textarea class="form-textarea" placeholder="Your Request is here"></textarea>
+                </div>
+
+                <!-- Payment Method Box -->
+                <div class="form-card-box">
+                    <h3>Payment method</h3>
+                    <div class="payment-radio-options">
+                        <label class="payment-radio-card active-payment">
+                            <div class="radio-left-group">
+                                <input type="radio" name="payment" checked>
+                                <span>Pay by Card/Credit</span>
+                            </div>
+                            <i class="fa-regular fa-credit-card payment-method-icon"></i>
+                        </label>
+                        <label class="payment-radio-card">
+                            <div class="radio-left-group">
+                                <input type="radio" name="payment">
+                                <span>Paypal</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label>CARD NUMBER</label>
+                        <input type="text" placeholder="1234 5678 9012 3456">
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label>EXPIRATION DATE</label>
+                            <input type="text" placeholder="MM/YY">
+                        </div>
+                        <div class="form-field">
+                            <label>CVC</label>
+                            <input type="text" placeholder="CVC code">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="confirm-booking-btn">Confirm Booking</button>
+            </div>
+
+            <!-- RIGHT COLUMN: Booking Summary Card -->
+            <div class="booking-summary-sidebar">
+                <div class="summary-card-box">
+                    <h3>Booking summary</h3>
+                    <h4 class="summary-room-title">Triple Room with Balcony</h4>
+                    
+                    <div class="summary-details-list">
+                        <div class="summary-row">
+                            <span>Main Guest:</span>
+                            <strong>ESSAM Mahmoud</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Guests:</span>
+                            <strong>2 adults</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>From:</span>
+                            <strong>Aug, 8</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>To:</span>
+                            <strong>Aug, 10</strong>
+                        </div>
+                    </div>
+
+                    <div class="summary-amenities-bullets">
+                        <div class="summary-bullet-item"><i class="fa-solid fa-check"></i> Breakfast Included</div>
+                        <div class="summary-bullet-item"><i class="fa-solid fa-check"></i> No smoking</div>
+                    </div>
+
+                    <div class="promo-code-box">
+                        <input type="text" placeholder="Input">
+                        <button type="button">Apply</button>
+                    </div>
+
+                    <div class="promo-applied-badge">
+                        <span><i class="fa-solid fa-tag"></i> OpenDoor26</span>
+                        <span class="discount-text">-EGP 500.00 <a href="#" class="remove-promo">[Remove]</a></span>
+                    </div>
+
+                    <div class="summary-total-row">
+                        <span>Total</span>
+                        <strong>EGP 1,556.83</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- NEWSLETTER & FOOTER                       -->
+    <!-- ========================================== -->
+    <footer class="site-footer-wrapper">
+        <div class="newsletter-banner">
+            <div class="newsletter-content">
+                <h2>Subscribe<br>Newsletter</h2>
+                <p class="newsletter-brand">The Travel</p>
+                <p class="newsletter-sub">Get inspired! Receive hotels discounts, tips and behind the scenes stories.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="newsletter-graphic">
+                <img src="assets/imgs/emojione-v1_open-mailbox-with-lowered-flag.png" alt="Mailbox illustration">
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo"><img src="assets/imgs/Logo Footer.png" alt=""></a>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Our Destinations</h4>
+                <ul>
+                    <li><a href="#">Cairo & Giza</a></li>
+                    <li><a href="#">Red Sea Resorts</a></li>
+                    <li><a href="#">Alexandria Coast</a></li>
+                    <li><a href="#">Global Getaways</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Partner with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Help & Support Center</a></li>
+                    <li><a href="mailto:support@opendoor.travel">support@opendoor.travel</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenDoor - Booking Complete</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Hero section -->
+    <section class="hero-section listing-hero booking-hero-compact">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="logo"><img src="assets/imgs/Logo Nav.png" alt="OpenDoor Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="hotels.html" class="active">Hotels</a></li>
+                <li><a href="index.html#packages">Packages</a></li>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="index.html">Contact us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="login.html" class="login-btn">Log in</a>
+                <a href="signup.html" class="signup-btn">Sign up</a>
+            </div>
+        </nav>
+    </section>
+
+    <main class="booking-page-container">
+        <!-- Step Progress Indicator (Step 3 Active) -->
+        <div class="checkout-steps-bar">
+            <div class="step-item completed">
+                <span class="step-num"><i class="fa-solid fa-check"></i></span>
+                <span class="step-text">Shopping cart</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item completed">
+                <span class="step-num"><i class="fa-solid fa-check"></i></span>
+                <span class="step-text">Your details</span>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item active">
+                <span class="step-num">3</span>
+                <span class="step-text">Booking complete</span>
+            </div>
+        </div>
+
+        <!-- Centered Success Confirmation Card -->
+        <div class="success-card-wrapper">
+            <div class="success-card-box">
+                <h2>Thank you!</h2>
+                <p class="success-main-text">
+                    Your Booking to <strong>Triple garden view hotel</strong> has been made successfully
+                </p>
+                <p class="success-sub-text">We are waiting for you on the scheduled time</p>
+                
+                <div class="success-hotel-thumb">
+                    <img src="assets/imgs/Triple hotel/1.jpg" alt="Triple garden view hotel">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- NEWSLETTER & FOOTER                       -->
+    <!-- ========================================== -->
+    <footer class="site-footer-wrapper">
+        <div class="newsletter-banner">
+            <div class="newsletter-content">
+                <h2>Subscribe<br>Newsletter</h2>
+                <p class="newsletter-brand">The Travel</p>
+                <p class="newsletter-sub">Get inspired! Receive hotels discounts, tips and behind the scenes stories.</p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="newsletter-graphic">
+                <img src="assets/imgs/emojione-v1_open-mailbox-with-lowered-flag.png" alt="Mailbox illustration">
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="footer-logo">Open<strong>Door</strong></a>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Our Destinations</h4>
+                <ul>
+                    <li><a href="#">Cairo & Giza</a></li>
+                    <li><a href="#">Red Sea Resorts</a></li>
+                    <li><a href="#">Alexandria Coast</a></li>
+                    <li><a href="#">Global Getaways</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Partner with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Help & Support Center</a></li>
+                    <li><a href="mailto:support@opendoor.travel">support@opendoor.travel</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
