@@ -35,9 +35,9 @@ body {
 .hero-section::after {
     content: '';
     position: absolute;
-    inset: 0;
+    inset: 0; /* defines the distances from the outer edges of an element's containing block */
     background: rgba(0, 0, 0, 0.58);
-    z-index: 1; 
+    z-index: 1; /* Controls the stacking order of elements that overlap each other on the page */
 }
 
 /* Ensure all content sits above the overlay */
@@ -1381,9 +1381,8 @@ body {
 }
 
 .page-num:hover, .page-num.active {
-    background: #0F172A;
+    background: #D4A373;
     color: #FFFFFF;
-    border-color: #0F172A;
 }
 
 .showing-results-text {
@@ -1606,7 +1605,7 @@ body {
 .property-full-width-section {
     grid-column: 1 / -1;
     border-radius: 8px;
-    padding: 28px;
+    padding: 8px;
 }
 
 .property-full-width-section h2 {
